@@ -24,8 +24,8 @@ namespace ETicaretAPI.API.Controllers
             LoginUserCommandResponse response = await _mediator.Send(loginUserCommandRequest);
             return Ok(response);
         }
-        [HttpGet("[action]")]
-        public async Task<IActionResult> RefreshTokenLogin([FromForm]RefreshTokenLoginCommandRequest loginUserCommandRequest)
+        [HttpPost("[action]")]
+        public async Task<IActionResult> RefreshTokenLogin([FromBody]RefreshTokenLoginCommandRequest loginUserCommandRequest)
         {
             RefreshTokenLoginCommandResponse response = await _mediator.Send(loginUserCommandRequest);
             return Ok(response);
