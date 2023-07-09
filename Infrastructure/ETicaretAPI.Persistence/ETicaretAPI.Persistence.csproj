@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Concretes\**" />
+    <EmbeddedResource Remove="Concretes\**" />
+    <None Remove="Concretes\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Google.Apis.Auth" Version="1.60.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
@@ -21,10 +27,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\ETicaretAPI.Application\ETicaretAPI.Application.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Concretes\" />
   </ItemGroup>
 
 </Project>

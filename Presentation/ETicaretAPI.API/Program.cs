@@ -25,6 +25,7 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 ConfigurationManager configuration = builder.Configuration;
 
+builder.Services.AddHttpContextAccessor();//Client'tan gelen request neticesinde olusturulan HttpContext nesnesine katmanlardaki class'lar üzerinden(business logic) eriþebilmemizi saðlayan servistir.
 builder.Services.AddPersistenceServices();
 builder.Services.AddInfrastructureServices();
 builder.Services.AddApplicationServices();
