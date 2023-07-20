@@ -120,5 +120,7 @@ namespace ETicaretAPI.Persistence.Services
                 await _basketItemWriteRepository.SaveAsync();
             }
         }
+
+        public Basket? GetUserActiveBasket => ContextUser().Result;
     }
 }
