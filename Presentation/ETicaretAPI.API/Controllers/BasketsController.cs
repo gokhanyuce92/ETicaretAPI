@@ -17,6 +17,7 @@ namespace ETicaretAPI.API.Controllers
         readonly IMediator _mediator;
         public BasketsController(IMediator mediator)
         {
+
             _mediator = mediator;
         }
 
