@@ -20,6 +20,7 @@ namespace ETicaretAPI.Infrastructure
             serviceCollection.AddScoped<ITokenHandler, TokenHandler>();
             serviceCollection.AddScoped<IMailService, MailService>();
             serviceCollection.AddScoped<IApplicationService, ApplicationService>();
+            serviceCollection.AddScoped<ITCValidatorService, TCValidatorService>();
         }
 
         public static void AddStorage<T>(this IServiceCollection serviceCollection) where T :Storage, IStorage

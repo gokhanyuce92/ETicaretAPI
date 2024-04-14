@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using ETicaretAPI.Application.Abstractions.Services;
+using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace ETicaretAPI.Application
